@@ -113,15 +113,15 @@ Conditions a relationship can enter or exist in.
 
 ## Experience Patterns (Layer 4)
 
-What people see and use. Each Experience Pattern draws on Layers 0–3.
+What people see and use. Each Experience Pattern draws on Layers 0–3.  
+All patterns must follow `experience-patterns/EXPERIENCE_PATTERN_GUIDE.md`.
 
 | ID | Name | Thai | Status | File |
 |---|---|---|---|---|
-| `waiting-for-me` | Waiting For Me | กำลังรอฉัน | `proposed` | `knowledge/experience/waiting-for-me.md` |
-| `attention-layer` | Attention Layer | ชั้นความใส่ใจ | `proposed` | `knowledge/experience/attention-layer.md` |
-| `greeting-card` | Greeting Card | การ์ดทักทาย | `proposed` | `knowledge/experience/greeting-card.md` |
-| `memory-surface` | Memory Surface | พื้นที่ความทรงจำ | `proposed` | `knowledge/experience/memory-surface.md` |
-| `hros` | Human Relationship OS | ระบบปฏิบัติการความสัมพันธ์มนุษย์ | `proposed` | `knowledge/experience/hros.md` |
+| `waiting-for-me` | Waiting For Me | กำลังรอฉัน | `proposed` | `experience-patterns/waiting-for-me.md` |
+| `attention-layer` | Attention Layer | ชั้นความใส่ใจ | `proposed` | `experience-patterns/attention-layer.md` |
+| `greeting-card` | Greeting Card | การ์ดทักทาย | `proposed` | `experience-patterns/greeting-card.md` |
+| `memory-surface` | Memory Surface | พื้นที่ความทรงจำ | `proposed` | `experience-patterns/memory-surface.md` |
 
 ---
 

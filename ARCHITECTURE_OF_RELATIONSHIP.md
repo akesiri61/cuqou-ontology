@@ -71,6 +71,25 @@ Each layer is distinct. A concept or feature belongs to one layer, not multiple.
 
 ---
 
+## The Domain / Product Boundary
+
+Layers 0–3 are **Domain**. They describe what is universally true about human relationships and how systems should reason about them. These layers exist independent of any product, platform, or interface.
+
+Layer 4 is **Product**. It describes what people experience — and may take many forms across different implementations. Multiple Experience Patterns may exist, each applying Layers 0–3 in a specific context.
+
+```
+Layers 0–3  DOMAIN    ← universal, product-independent, rarely changes
+════════════════════════════════════════════════════════
+Layer 4     PRODUCT   ← implementation-specific, may have multiple patterns
+```
+
+This boundary matters because:
+- A concept that belongs to Layers 0–3 has one canonical definition
+- An Experience Pattern at Layer 4 can have multiple forms while using the same Domain concepts
+- Changes to Domain layers affect all products built on the ontology; changes to Layer 4 do not
+
+---
+
 ## Layer 0 — Axiom: Relationship Truth
 
 **One sentence:** Meaningful relationship expressions must faithfully represent authentic human intention, regardless of how much technology assists in their creation or delivery.
@@ -161,7 +180,21 @@ Experience Patterns in Cuqou are not standalone features. Each one is an express
 | **Greeting Card** | A structured form for CRP-based expressions |
 | **Future Letter** | A time-deferred expression of memory and meaning |
 
-**See:** `knowledge/experience/`
+Experience Patterns share a common template. Every pattern must pass the Human Agency Check and Relationship Truth Check before becoming canonical.
+
+**See:** `experience-patterns/EXPERIENCE_PATTERN_GUIDE.md`
+
+---
+
+## Two Ways to Read the System
+
+The Architecture gives the **vertical view** — what layers exist and what each layer contains.
+
+The Flow gives the **horizontal view** — how a single relationship expression moves from human decision to delivery.
+
+These are two perspectives on the same system. Together they form a complete picture.
+
+**See:** `RELATIONSHIP_FLOW.md`
 
 ---
 
