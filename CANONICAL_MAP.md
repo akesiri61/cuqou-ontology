@@ -12,20 +12,58 @@ Concepts not listed here are not part of the ontology.
 
 ---
 
+## Architecture
+
+The ontology is organized into four layers. Each concept belongs to exactly one layer.
+
+```
+Layer 0 — Axiom         — The foundational principle all other layers serve
+Layer 1 — Stewardship   — Principles that govern AI behavior within the ecosystem
+Layer 2 — Language      — Vocabulary: protocols, grammar, states, intents
+Layer 3 — Intelligence  — Reasoning: decision rules, constraints, recommendations
+Layer 4 — Experience    — What people see and use: patterns, surfaces, artifacts
+```
+
+See: `ARCHITECTURE_OF_RELATIONSHIP.md`
+
 ## Categories
 
 ```
-Taxonomy          — The grammar: axes that govern how all concepts relate
-Core Concepts     — What exists in relationships (nouns)
-Protocols         — How to act within relationships (methods)
-States            — Conditions a relationship can be in
-Artifacts         — Things produced within relationships
-Systems           — Architectures that support relationships
+Axioms            — The foundational principle (Layer 0)
+Stewardship       — Governing principles for AI behavior (Layer 1)
+Taxonomy          — The grammar: axes that govern how all concepts relate (Layer 2)
+Protocols         — How to act within relationships (Layer 2)
+Concepts          — What exists in relationships (Layer 2)
+States            — Conditions a relationship can be in (Layer 2)
+Decision          — Reasoning rules and constraints (Layer 3)
+Experience        — Patterns, surfaces, and artifacts (Layer 4)
 ```
 
 ---
 
-## Taxonomy
+## Axioms (Layer 0)
+
+The Foundational Axiom — all other concepts derive their purpose from this.
+
+| ID | Name | Status | File |
+|---|---|---|---|
+| `relationship-truth` | Relationship Truth | `axiom` | `axioms/relationship-truth.md` |
+
+---
+
+## Stewardship Principles (Layer 1)
+
+Principles that govern how AI operates within the ecosystem. These protect the Axiom.
+
+| ID | Name | Thai | Status | File |
+|---|---|---|---|---|
+| `human-agency` | Human Agency | อำนาจในการตัดสินใจของมนุษย์ | `canonical` | `knowledge/principles/human-agency.md` |
+| `human-contribution` | Human Contribution | การมีส่วนร่วมของมนุษย์ | `canonical` | `knowledge/concepts/human-contribution.md` |
+| `intent-provenance` | Intent Provenance | ที่มาของเจตนา | `canonical` | `knowledge/concepts/intent-provenance.md` |
+
+---
+
+## Taxonomy (Layer 2)
 
 The grammar layer that defines axes and classification systems. Concepts in other categories reference the taxonomy — not the reverse.
 
@@ -37,15 +75,12 @@ The grammar layer that defines axes and classification systems. Concepts in othe
 
 ---
 
-## Core Concepts
+## Concepts (Layer 2)
 
 Fundamental ideas about the nature of relationships.
 
 | ID | Name | Thai | Status | File |
 |---|---|---|---|---|
-| `relationship-truth` | Relationship Truth | ความจริงของความสัมพันธ์ | `canonical` | `knowledge/concepts/relationship-truth.md` |
-| `human-contribution` | Human Contribution | การมีส่วนร่วมของมนุษย์ | `canonical` | `knowledge/concepts/human-contribution.md` |
-| `intent-provenance` | Intent Provenance | ที่มาของเจตนา | `canonical` | `knowledge/concepts/intent-provenance.md` |
 | `relationship` | Relationship | ความสัมพันธ์ | `proposed` | `knowledge/concepts/relationship.md` |
 | `attention` | Attention | ความสนใจ / การให้ความใส่ใจ | `proposed` | `knowledge/concepts/attention.md` |
 | `memory` | Relationship Memory | ความทรงจำในความสัมพันธ์ | `proposed` | `knowledge/concepts/memory.md` |
@@ -65,7 +100,7 @@ Named methods for navigating specific relationship challenges.
 
 ---
 
-## States
+## States (Layer 2)
 
 Conditions a relationship can enter or exist in.
 
@@ -76,26 +111,17 @@ Conditions a relationship can enter or exist in.
 
 ---
 
-## Artifacts
+## Experience Patterns (Layer 4)
 
-Tangible or digital objects produced within a relationship context.
-
-| ID | Name | Thai | Status | File |
-|---|---|---|---|---|
-| `greeting-card` | Greeting Card | การ์ดทักทาย | `proposed` | `knowledge/artifacts/greeting-card.md` |
-| `memory-surface` | Memory Surface | พื้นที่ความทรงจำ | `proposed` | `knowledge/artifacts/memory-surface.md` |
-
----
-
-## Systems
-
-Architectural frameworks that organize how attention and meaning flow within relationships.
+What people see and use. Each Experience Pattern draws on Layers 0–3.
 
 | ID | Name | Thai | Status | File |
 |---|---|---|---|---|
-| `attention-layer` | Attention Layer | ชั้นความใส่ใจ | `proposed` | `knowledge/systems/attention-layer.md` |
-| `hros` | Human Relationship OS | ระบบปฏิบัติการความสัมพันธ์มนุษย์ | `proposed` | `knowledge/systems/hros.md` |
-| `relationship-room` | Relationship Room | ห้องความสัมพันธ์ | `proposed` | `knowledge/systems/relationship-room.md` |
+| `waiting-for-me` | Waiting For Me | กำลังรอฉัน | `proposed` | `knowledge/experience/waiting-for-me.md` |
+| `attention-layer` | Attention Layer | ชั้นความใส่ใจ | `proposed` | `knowledge/experience/attention-layer.md` |
+| `greeting-card` | Greeting Card | การ์ดทักทาย | `proposed` | `knowledge/experience/greeting-card.md` |
+| `memory-surface` | Memory Surface | พื้นที่ความทรงจำ | `proposed` | `knowledge/experience/memory-surface.md` |
+| `hros` | Human Relationship OS | ระบบปฏิบัติการความสัมพันธ์มนุษย์ | `proposed` | `knowledge/experience/hros.md` |
 
 ---
 

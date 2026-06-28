@@ -1,10 +1,12 @@
 ---
 id: human-contribution
-version: "1.0"
+version: "2.0"
 status: canonical
-category: concept
-uri: https://ontology.cuqou.com/human-contribution
+category: stewardship-principle
+layer: 1
+uri: https://ontology.cuqou.com/principles/human-contribution
 license: CC BY 4.0 — Cuqou (https://cuqou.com)
+axiom: relationship-truth
 ---
 
 # Human Contribution
@@ -16,11 +18,17 @@ license: CC BY 4.0 — Cuqou (https://cuqou.com)
 
 ---
 
+## Stewardship Principle — Layer 1
+
+Human Contribution is a Stewardship Principle. It governs the authenticity of the human voice in relationship expressions — not by prohibiting AI assistance, but by preserving the space in which the human's own voice can enter.
+
+---
+
 ## One Sentence
 
-**EN:** Human Contribution is the principle that every meaningful relationship communication must contain an authentic expression originating from the person — not from an AI system acting as their substitute.
+**EN:** Human Contribution is the principle that the system must always preserve space for the person's authentic words, feelings, and intentions to be present in any relationship expression — regardless of how much AI assists in its creation.
 
-**TH:** Human Contribution คือหลักการที่ว่าการสื่อสารในความสัมพันธ์ที่มีความหมายทุกครั้ง ต้องมีส่วนที่มาจากการแสดงออกอย่างแท้จริงของบุคคลนั้น ไม่ใช่จาก AI ที่ทำหน้าที่แทน
+**TH:** Human Contribution คือหลักการที่ว่าระบบต้องรักษาพื้นที่ให้มนุษย์สามารถแสดงถ้อยคำ ความรู้สึก และเจตนาของตนเองได้เสมอ — ไม่ว่า AI จะช่วยสร้างเนื้อหามากเพียงใดก็ตาม
 
 ---
 
@@ -48,34 +56,76 @@ Human Contribution preserves that proof in every protocol.
 
 ---
 
-## What Human Contribution Requires
+## Human Contribution Is a Spectrum
 
-In every relationship communication:
+Human Contribution is not binary. It exists on a spectrum from AI-generated to fully human-authored.
 
-1. **Review** — the person must be able to read what will be sent before it is sent
-2. **Modify** — the person must be able to change any part of the content
-3. **Add** — the person must be able to add their own words
-4. **Replace** — the person must be able to discard AI-generated content entirely and write their own
-5. **Reject** — the person must be able to cancel the communication entirely
+```
+0%          25%               50%              75%         100%
+│           │                 │                │           │
+AI          AI draft,         Human + AI       Human with  Human
+Generated   human edits       collaborative    AI refining authored
+```
 
-AI output that cannot be reviewed, modified, added to, replaced, or rejected before being sent is a violation of Human Contribution.
+Cuqou does not require 100% Human Contribution in every expression. AI assistance is valuable and encouraged.
+
+Cuqou does require that:
+1. The human is **aware** of where their expression sits on this spectrum
+2. The human has a **genuine path** to move toward higher contribution if they choose
+3. The system never **hides** the degree of AI involvement
+
+---
+
+## `human_contribution_score`
+
+The system uses an internal metric to track where an expression sits on the spectrum:
+
+```yaml
+human_contribution_score:
+  range: 0.0–1.0
+  purpose: >
+    Internal reasoning only. 
+    Used by the Decision Layer to calibrate AI behavior.
+    Never shown to users as a gamification metric or quality score.
+  usage:
+    - If score is low: AI should ask more questions, offer more space, reduce drafting
+    - If score is high: AI may offer refinement assistance
+    - Score is never used to judge the value of the relationship expression
+```
+
+The score exists not to evaluate the person — but to help the system know when to step back and when to assist.
+
+---
+
+## What the System Must Preserve
+
+In every relationship expression, the system must preserve:
+
+1. **The person's ability to read** what will be sent before it is sent
+2. **The person's ability to modify** any part of the content
+3. **The person's ability to add** their own words to any AI-generated draft
+4. **The person's ability to replace** AI content entirely with their own
+5. **The person's ability to reject** — to cancel the communication entirely
+
+These are not restrictions on AI capability. They are the conditions under which AI capability becomes genuinely useful rather than substitutive.
 
 ---
 
 ## Role of AI Within This Principle
 
 AI may:
-- Suggest conversation structures
-- Offer example messages as starting points
-- Help organize a person's thoughts
-- Improve clarity of what the person has written
-- Recommend expressions and mediums
+- Draft a starting point the human can modify
+- Suggest multiple options with different tones or styles
+- Translate the human's words into another language
+- Improve clarity and grammar of what the human has written
+- Organize the human's thoughts into a more structured form
+- Coach the human toward finding their own words
 
 AI must not:
-- Send relationship communications autonomously
-- Present AI-generated content as the person's own without review
-- Make the AI-generated version the default that requires effort to change
-- Remove or reduce the person's ability to contribute their own voice
+- Send relationship expressions without human review
+- Present AI-generated content as the person's own without transparency
+- Make the AI draft the only path — human composition must always be available
+- Reduce the interface to a "select and send" pattern with no authentic contribution step
 
 ---
 
@@ -119,9 +169,12 @@ AI makes this principle more important to name explicitly — not less.
 
 ## Related Concepts
 
+- **[Relationship Truth](../../axioms/relationship-truth.md)** — the Axiom this principle serves
+- **[Human Agency](../principles/human-agency.md)** — the authority layer; paired with Contribution
+- **[Intent Provenance](intent-provenance.md)** — the origin layer; precedes Contribution
 - **[CPP](../protocols/cpp.md)** — preparation protocol where Human Contribution applies to the 4 Standard Answers
 - **[CRP](../protocols/crp.md)** — signal protocol where Human Contribution applies to every Relationship Expression
-- **[FOUNDER_DECISIONS §25](../../docs/architecture/FOUNDER_DECISIONS.md)** — Human Voice Preservation (Tier 0)
+- **[ARCHITECTURE_OF_RELATIONSHIP](../../ARCHITECTURE_OF_RELATIONSHIP.md)** — the layer this principle belongs to
 
 ---
 
