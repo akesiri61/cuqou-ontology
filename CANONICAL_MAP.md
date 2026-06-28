@@ -58,7 +58,7 @@ Named methods for navigating specific relationship challenges.
 | ID | Name | Thai | Status | File |
 |---|---|---|---|---|
 | `cpp` | Conversation Preparation Protocol | โปรโตคอลการเตรียมบทสนทนา | `canonical` | `knowledge/protocols/cpp.md` |
-| `crp` | Conversation Resolution Protocol | โปรโตคอลการแก้ไขบทสนทนา | `proposed` | `knowledge/protocols/crp.md` |
+| `crp` | Conversation Resolution Protocol | โปรโตคอลการส่งสัญญาณความสัมพันธ์ | `canonical` | `knowledge/protocols/crp.md` |
 
 ---
 

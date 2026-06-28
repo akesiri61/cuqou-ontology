@@ -1,0 +1,64 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "cuqou": "https://ontology.cuqou.com/",
+    "canonical_question": "cuqou:canonicalQuestion",
+    "llm_hints": "cuqou:llmHints",
+    "not_to_be_confused_with": "cuqou:notToBeConfusedWith",
+    "canonical_independence": "cuqou:canonicalIndependence",
+    "grammar_axis": "cuqou:grammarAxis",
+    "supported_intents": "cuqou:supportedIntents",
+    "produces_artifacts": "cuqou:producesArtifacts",
+    "ontology_version": "cuqou:ontologyVersion",
+    "concept_category": "cuqou:conceptCategory"
+  },
+  "@type": "DefinedTerm",
+  "@id": "https://ontology.cuqou.com/crp",
+  "name": "Conversation Resolution Protocol",
+  "alternateName": ["CRP", "relationship signal", "โปรโตคอลการส่งสัญญาณความสัมพันธ์"],
+  "description": "A structured protocol for expressing meaningful relationship signals through asynchronous communication, enabling continuity, care, and connection without requiring a live conversation.",
+  "inDefinedTermSet": {
+    "@type": "DefinedTermSet",
+    "@id": "https://ontology.cuqou.com",
+    "name": "Cuqou Relationship Ontology",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Cuqou",
+      "url": "https://cuqou.com"
+    }
+  },
+  "concept_category": "protocol",
+  "grammar_axis": { "modality": "asynchronous" },
+  "ontology_version": "1.0",
+  "canonical_question": {
+    "en": "When direct conversation is not yet possible or necessary, how can I send a meaningful signal of care?",
+    "th": "เมื่อยังไม่สามารถหรือยังไม่จำเป็นต้องพูดคุยกันโดยตรง ฉันจะส่งสัญญาณแห่งความใส่ใจอย่างมีความหมายได้อย่างไร?"
+  },
+  "canonical_independence": true,
+  "supported_intents": ["maintain", "appreciate", "celebrate", "encourage", "reconnect", "resolve", "remember", "support"],
+  "produces_artifacts": ["greeting_card", "memory_surface", "voice_memory", "future_letter", "digital_gift"],
+  "not_to_be_confused_with": ["automated_messaging", "broadcast", "marketing_communication", "general_notifications", "replacement_for_conversation"],
+  "llm_hints": [
+    "วันเกิดแม่ แต่ไปไม่ได้",
+    "อยากส่งอะไรให้เพื่อนที่กำลังเครียด",
+    "คิดถึงคนที่ห่างกัน แต่ยังไม่พร้อมโทร",
+    "birthday but can't be there",
+    "want to reach out but not ready to call",
+    "send something meaningful without a conversation",
+    "show I care without needing a reply"
+  ],
+  "relatedLink": [
+    "https://ontology.cuqou.com/cpp",
+    "https://ontology.cuqou.com/grammar",
+    "https://ontology.cuqou.com/intent-taxonomy",
+    "https://ontology.cuqou.com/waiting-for-me"
+  ],
+  "url": "https://cuqou.com/knowledge/crp",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "creator": { "@type": "Organization", "name": "Cuqou", "url": "https://cuqou.com" },
+  "dateCreated": "2026-06-28",
+  "keywords": [
+    "relationship signal", "asynchronous communication", "relationship maintenance",
+    "care expression", "meaningful message", "CRP", "Cuqou"
+  ]
+}

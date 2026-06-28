@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ontology.cuqou.com/schema/crp",
+  "title": "Conversation Resolution Protocol (CRP)",
+  "description": "Schema for validating CRP vocabulary entries in the Cuqou Relationship Ontology",
+  "type": "object",
+  "required": ["id", "version", "status", "category", "grammar_axis", "label", "canonical_question", "one_sentence"],
+  "properties": {
+    "id": { "type": "string", "const": "crp" },
+    "version": { "type": "string", "pattern": "^\\d+\\.\\d+$" },
+    "status": { "type": "string", "enum": ["draft", "proposed", "canonical", "deprecated"] },
+    "category": { "type": "string", "enum": ["concept", "protocol", "state", "artifact", "system"] },
+    "grammar_axis": {
+      "type": "object",
+      "required": ["modality"],
+      "properties": {
+        "modality": { "type": "string", "const": "asynchronous" }
+      }
+    },
+    "label": {
+      "type": "object",
+      "required": ["en", "th"],
+      "properties": {
+        "en": { "type": "string" },
+        "th": { "type": "string" }
+      }
+    },
+    "canonical_question": {
+      "type": "object",
+      "required": ["en", "th"],
+      "properties": {
+        "en": { "type": "string" },
+        "th": { "type": "string" }
+      }
+    },
+    "one_sentence": {
+      "type": "object",
+      "required": ["en", "th"],
+      "properties": {
+        "en": { "type": "string" },
+        "th": { "type": "string" }
+      }
+    },
+    "supported_intents": {
+      "type": "array",
+      "items": { "type": "string" },
+      "minItems": 1
+    },
+    "produces_artifacts": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "canonical_independence": { "type": "boolean" }
+  }
+}

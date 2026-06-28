@@ -1,17 +1,22 @@
 ---
-id: inference-layer
-version: "1.0"
+id: decision-layer
+version: "1.1"
 status: canonical
 category: system
-uri: https://ontology.cuqou.com/inference
+uri: https://ontology.cuqou.com/decision
 license: CC BY 4.0 — Cuqou (https://cuqou.com)
 ---
 
-# Cuqou Inference Layer
+# Cuqou Decision Layer
 
 ## What This Is
 
-The Inference Layer is the third structural layer of the Cuqou Relationship Ontology:
+The Decision Layer is the third structural layer of the Cuqou Relationship Ontology.
+
+**Why "Decision Layer" and not "Inference Layer":**  
+Inference describes a method — how AI systems reason.  
+Decision describes a function — what the layer is *for*: helping humans and AI decide what to do.  
+The Decision Layer serves humans, AI systems, rule engines, and recommendation systems equally. Naming it after its function rather than one implementation method keeps it technology-neutral.
 
 | Layer | Answers | Files |
 |---|---|---|

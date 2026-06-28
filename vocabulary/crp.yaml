@@ -1,0 +1,119 @@
+id: crp
+version: "1.0"
+status: canonical
+category: protocol
+created: "2026-06-28"
+maintainer: cuqou-ontology-maintainer
+
+label:
+  en: Conversation Resolution Protocol
+  th: โปรโตคอลการส่งสัญญาณความสัมพันธ์
+
+abbreviation: CRP
+
+grammar_axis:
+  modality: asynchronous
+  see: knowledge/taxonomy/RELATIONSHIP_GRAMMAR.md
+
+canonical_question:
+  en: "When direct conversation is not yet possible or necessary, how can I send a meaningful signal of care?"
+  th: "เมื่อยังไม่สามารถหรือยังไม่จำเป็นต้องพูดคุยกันโดยตรง ฉันจะส่งสัญญาณแห่งความใส่ใจอย่างมีความหมายได้อย่างไร?"
+
+one_sentence:
+  en: >
+    CRP is a structured protocol for expressing meaningful relationship signals through
+    asynchronous communication, enabling continuity, care, and connection without
+    requiring a live conversation.
+  th: >
+    CRP คือโปรโตคอลสำหรับการส่งสัญญาณแห่งความสัมพันธ์ที่มีความหมายผ่านการสื่อสารแบบไม่พร้อมกัน
+    เพื่อคงไว้ซึ่งความต่อเนื่อง ความใส่ใจ และความเชื่อมโยง โดยไม่จำเป็นต้องเกิดการสนทนาแบบทันที
+
+aliases:
+  - Conversation Resolution Protocol
+  - CRP
+  - relationship signal
+  - asynchronous relationship communication
+
+keywords:
+  en:
+    - relationship signal
+    - asynchronous communication
+    - meaningful message
+    - relationship continuity
+    - care expression
+    - relationship maintenance
+  th:
+    - สัญญาณความสัมพันธ์
+    - การสื่อสารแบบไม่พร้อมกัน
+    - ความต่อเนื่องของความสัมพันธ์
+    - การแสดงความใส่ใจ
+
+llm_hints:
+  - "วันเกิดแม่ แต่ไปไม่ได้"
+  - "อยากส่งอะไรให้เพื่อนที่กำลังเครียด"
+  - "คิดถึงคนที่ห่างกัน แต่ยังไม่พร้อมโทร"
+  - "อยากขอบคุณแต่ไม่รู้จะบอกยังไง"
+  - "อยากให้กำลังใจโดยไม่ต้องพูด"
+  - "ไม่ได้คุยนานมาก แต่อยากให้รู้ว่าคิดถึง"
+  - "birthday but can't be there"
+  - "want to reach out but not ready to call"
+  - "send something meaningful without a conversation"
+  - "show I care without needing a reply"
+
+not_to_be_confused_with:
+  - automated_messaging
+  - broadcast
+  - marketing_communication
+  - general_notifications
+  - replacement_for_conversation
+  - conflict_resolution_only
+
+supported_intents:
+  - maintain
+  - appreciate
+  - celebrate
+  - encourage
+  - reconnect
+  - resolve
+  - remember
+  - support
+
+produces_artifacts:
+  - greeting_card
+  - memory_surface
+  - voice_memory
+  - future_letter
+  - digital_gift
+
+related:
+  - cpp
+  - attention-layer
+  - waiting-for-me
+  - relationship-decay
+  - intent-taxonomy
+  - relationship-grammar
+
+canonical_independence: true
+canonical_independence_note: >
+  CRP is meaningful independent of any product, platform, or technology.
+  The concept of sending a meaningful asynchronous signal of care exists
+  in handwritten letters, postcards, voice messages, and recorded greetings —
+  all predating any digital product. CRP names and structures this pattern.
+
+decision_layer:
+  protocol_selection_rules:
+    - P002
+  artifact_suggestion_rules:
+    - A001
+    - A002
+    - A003
+    - A004
+
+files:
+  vocabulary: vocabulary/crp.yaml
+  knowledge: knowledge/protocols/crp.md
+  reasoning: knowledge/protocols/crp.reasoning.md
+  examples: knowledge/protocols/crp.examples.md
+  schema: schema/crp.schema.json
+  jsonld: exports/crp.jsonld
+  uri: https://ontology.cuqou.com/crp
