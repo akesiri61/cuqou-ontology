@@ -291,15 +291,73 @@ If any fail, the RFC process opens to address the specific gap.
 
 ---
 
+## Architecture: What Cuqou Is Building
+
+```
+Living Ontology  (Source Code)
+        │
+        ▼
+Relationship Runtime  (Execution Layer)
+        │
+  ──────┼──────────────────────────────
+        │
+        ├── LINE Mini App      ← Reference Implementation
+        ├── AI Chat Plugin
+        ├── MCP Server
+        ├── cuqou-web
+        └── Future APIs, SDKs, Enterprise
+```
+
+**Ontology = Source Code.** Defines what is true, what governs, how to reason.  
+**Relationship Runtime = Execution Layer.** Compiles the Ontology into Experience.  
+**Products = Applications.** Each is an expression of the Runtime in a specific context.
+
+Cuqou's product is not the Mini App. The Mini App is a Reference Implementation.  
+Cuqou's product is the **Relationship Runtime** — the layer that transforms Living Ontology into verifiable human experience.
+
+**The Feedback Loop:**
+
+```
+Living Ontology
+        │
+        ▼
+Relationship Runtime
+        │
+        ▼
+Experience
+        │
+        ▼
+Human Behavior
+        │
+        ▼
+Evidence
+        │
+        ▼
+cuqou-cases
+        │
+        ▼
+Ontology Refinement
+        │
+        └──────────────────┐
+                           ▼
+               Living Ontology (updated)
+```
+
+This loop is why the Ontology is *living*. Not because files are edited. Because human evidence continuously validates and refines the source.
+
+**Phase III question (revised):**  
+*"Can we make the Living Ontology into a Runtime that reliably produces authentic relationship experience?"*
+
+When the answer is yes — the Ontology becomes a Platform.
+
 ## The Repository Ecosystem
 
 ```
-cuqou-ontology          ← Living Ontology (this repository)
+cuqou-ontology          ← Living Ontology / Source (this repository)
         │
         ▼
-Reference Implementations
-  cuqou-mvp (LINE Mini App)
-  cuqou-web
+cuqou-mvp (LINE Mini App)    ← Relationship Runtime / Reference Implementation
+cuqou-web                    ← Knowledge Layer / Reference Implementation
         │
         ▼
 Behavioral Evidence
