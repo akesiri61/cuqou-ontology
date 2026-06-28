@@ -1,7 +1,7 @@
 ---
 rfc: "0001"
 title: Relationship Expression Layer
-status: proposed
+status: accepted-modified
 proposed_by: Founder
 date: "2026-06-28"
 affects:
@@ -162,10 +162,45 @@ Medium becomes a sub-taxonomy under Expression, not a standalone concept categor
 
 ## Reviewer Notes
 
-*(Left for Maintainer)*
+The proposed structure `Intent → Protocol → Expression → Medium` is architecturally correct.
+
+However, it is missing the most important principle of Cuqou: **Human Voice Preservation**.
+
+Every relationship communication produced through CPP or CRP must preserve an explicit opportunity for authentic human contribution. AI may recommend, assist, and organize — but must never become the speaker.
+
+This principle must be added as an axis before Medium is selected.
 
 ## Decision
 
-Status: proposed  
-Reason: *(to be filled by Maintainer)*  
-Date: *(to be filled)*
+Status: **accepted-modified**  
+Maintainer: Cuqou Founders  
+Date: 2026-06-28
+
+### Modification
+
+The accepted structure is:
+
+```
+Intent → Protocol → Expression → Human Contribution → Medium
+```
+
+**Human Contribution** is added as a first-class layer between Expression and Medium.
+
+This is not a UX requirement. It is an Ontology Principle.
+
+Definition: Every meaningful relationship communication must preserve an authentic human contribution. AI may assist. AI must not replace the person's own expression.
+
+### What this changes
+
+- `RELATIONSHIP_GRAMMAR.md` — add Human Contribution axis
+- `decision/` — add `human-contribution.yaml` constraint rules
+- `knowledge/concepts/human-contribution.md` — new canonical concept
+- `CANONICAL_MAP.md` — add to Core Concepts
+- `FOUNDER_DECISIONS.md §25` — Human Voice Preservation (Tier 0)
+
+### What remains unchanged from the original proposal
+
+- Expression layer is accepted
+- Medium taxonomy is accepted
+- The 3-step → 5-step Decision Layer expansion is accepted
+- All concept names (Expression, Medium) are accepted

@@ -93,3 +93,23 @@ constraints:
     example_violation: >
       WRONG: "user sets relationship to 'decaying'"
       CORRECT: "system recognizes relationship as 'decaying' from contact patterns"
+
+  - id: C006
+    version: "1.0"
+    type: constraint
+    confidence: 1.0
+    label: "AI must not send relationship communications without human review and contribution"
+    prevents:
+      from: ai_system
+      to: autonomous_relationship_communication
+    rationale: >
+      Human Contribution is a Tier-0 principle (FOUNDER_DECISIONS §25).
+      Every relationship communication produced through CPP or CRP must pass
+      through a Human Contribution layer before being sent.
+      The person must be able to review, modify, add to, replace, or reject
+      any AI-generated content before it reaches another person.
+      AI acts as a preparation partner — not as the sender.
+    example_violation: >
+      WRONG: AI generates a birthday message and sends it automatically
+      CORRECT: AI suggests a birthday message; person reviews, edits, and sends it themselves
+    see: knowledge/concepts/human-contribution.md
