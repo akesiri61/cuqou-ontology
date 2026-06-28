@@ -1,0 +1,76 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "cuqou": "https://ontology.cuqou.com/",
+    "canonical_question": "cuqou:canonicalQuestion",
+    "llm_hints": "cuqou:llmHints",
+    "not_to_be_confused_with": "cuqou:notToBeConfusedWith",
+    "canonical_independence": "cuqou:canonicalIndependence",
+    "ontology_version": "cuqou:ontologyVersion",
+    "concept_category": "cuqou:conceptCategory"
+  },
+  "@type": "DefinedTerm",
+  "@id": "https://ontology.cuqou.com/cpp",
+  "name": "Conversation Preparation Protocol",
+  "alternateName": ["CPP", "Conversation Preparation", "โปรโตคอลการเตรียมบทสนทนา"],
+  "description": "A structured protocol for preparing a meaningful conversation before it begins, especially when the relationship carries emotional distance, uncertainty, or importance.",
+  "inDefinedTermSet": {
+    "@type": "DefinedTermSet",
+    "@id": "https://ontology.cuqou.com",
+    "name": "Cuqou Relationship Ontology",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Cuqou",
+      "url": "https://cuqou.com"
+    }
+  },
+  "concept_category": "protocol",
+  "ontology_version": "1.0",
+  "canonical_question": {
+    "en": "How should I prepare before starting a conversation that matters?",
+    "th": "ฉันควรเตรียมตัวอย่างไรก่อนเริ่มบทสนทนาที่สำคัญ?"
+  },
+  "canonical_independence": true,
+  "not_to_be_confused_with": [
+    "script",
+    "conversation template",
+    "prompt",
+    "ice breaker",
+    "therapy",
+    "conflict resolution",
+    "checklist"
+  ],
+  "llm_hints": [
+    "จะเริ่มคุยกับแม่ยังไง",
+    "ไม่รู้จะทักแฟนยังไง",
+    "กลับมาคุยกับลูกหลังห่างกัน",
+    "เตรียมตัวก่อนคุยเรื่องสำคัญ",
+    "how to start a hard conversation",
+    "prepare for conversation with family",
+    "talk to someone after long silence"
+  ],
+  "relatedLink": [
+    "https://ontology.cuqou.com/crp",
+    "https://ontology.cuqou.com/relationship-decay",
+    "https://ontology.cuqou.com/waiting-for-me",
+    "https://ontology.cuqou.com/attention-layer"
+  ],
+  "url": "https://cuqou.com/knowledge/cpp",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "creator": {
+    "@type": "Organization",
+    "name": "Cuqou",
+    "url": "https://cuqou.com"
+  },
+  "dateCreated": "2026-06-28",
+  "keywords": [
+    "conversation preparation",
+    "difficult conversation",
+    "family communication",
+    "relationship maintenance",
+    "emotional readiness",
+    "meaningful conversation",
+    "CPP",
+    "Cuqou"
+  ]
+}

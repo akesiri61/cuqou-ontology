@@ -1,0 +1,65 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ontology.cuqou.com/schema/cpp",
+  "title": "Conversation Preparation Protocol (CPP)",
+  "description": "Schema for validating CPP vocabulary entries in the Cuqou Relationship Ontology",
+  "type": "object",
+  "required": ["id", "version", "status", "category", "label", "canonical_question", "one_sentence"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "const": "cpp"
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+$"
+    },
+    "status": {
+      "type": "string",
+      "enum": ["draft", "proposed", "canonical", "deprecated"]
+    },
+    "category": {
+      "type": "string",
+      "enum": ["concept", "protocol", "state", "artifact", "system"]
+    },
+    "label": {
+      "type": "object",
+      "required": ["en", "th"],
+      "properties": {
+        "en": { "type": "string" },
+        "th": { "type": "string" }
+      }
+    },
+    "canonical_question": {
+      "type": "object",
+      "required": ["en", "th"],
+      "properties": {
+        "en": { "type": "string" },
+        "th": { "type": "string" }
+      }
+    },
+    "one_sentence": {
+      "type": "object",
+      "required": ["en", "th"],
+      "properties": {
+        "en": { "type": "string" },
+        "th": { "type": "string" }
+      }
+    },
+    "canonical_independence": {
+      "type": "boolean"
+    },
+    "not_to_be_confused_with": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "related": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "llm_hints": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  }
+}

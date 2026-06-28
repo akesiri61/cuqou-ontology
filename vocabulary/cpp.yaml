@@ -1,0 +1,83 @@
+id: cpp
+version: "1.0"
+status: canonical
+category: protocol
+created: "2026-06-28"
+maintainer: cuqou-ontology-maintainer
+
+label:
+  en: Conversation Preparation Protocol
+  th: โปรโตคอลการเตรียมบทสนทนา
+
+abbreviation: CPP
+
+canonical_question:
+  th: "ฉันควรเตรียมตัวอย่างไรก่อนเริ่มบทสนทนาที่สำคัญ?"
+  en: "How should I prepare before starting a conversation that matters?"
+
+one_sentence:
+  en: >
+    CPP is a structured protocol for preparing a meaningful conversation before it begins,
+    especially when the relationship carries emotional distance, uncertainty, or importance.
+  th: >
+    CPP คือโปรโตคอลสำหรับการเตรียมความพร้อมก่อนเริ่มบทสนทนาที่มีความหมาย
+    โดยเฉพาะเมื่อความสัมพันธ์มีความห่าง ความไม่แน่ใจ หรือมีความสำคัญทางอารมณ์
+
+aliases:
+  - Conversation Preparation Protocol
+  - CPP
+  - conversation preparation
+  - prepare for conversation
+
+keywords:
+  en:
+    - conversation preparation
+    - difficult conversation
+    - family communication
+    - relationship maintenance
+    - emotional readiness
+    - meaningful conversation
+  th:
+    - การเตรียมบทสนทนา
+    - บทสนทนาที่ยาก
+    - การสื่อสารในครอบครัว
+    - การดูแลความสัมพันธ์
+
+llm_hints:
+  - "จะเริ่มคุยกับแม่ยังไง"
+  - "ไม่รู้จะทักแฟนยังไง"
+  - "กลับมาคุยกับลูกหลังห่างกัน"
+  - "เตรียมตัวก่อนคุยเรื่องสำคัญ"
+  - "how to start a hard conversation"
+  - "prepare for conversation with family"
+  - "talk to someone after long silence"
+
+not_to_be_confused_with:
+  - script
+  - conversation template
+  - prompt
+  - ice breaker
+  - therapy
+  - conflict resolution
+  - checklist
+
+related:
+  - crp
+  - attention-layer
+  - relationship-decay
+  - waiting-for-me
+
+canonical_independence: true
+canonical_independence_note: >
+  CPP is meaningful without any Cuqou product or application.
+  It can be used by therapists, coaches, teachers, family counselors,
+  HR professionals, and individuals preparing for important conversations.
+
+files:
+  vocabulary: vocabulary/cpp.yaml
+  knowledge: knowledge/protocols/cpp.md
+  reasoning: knowledge/protocols/cpp.reasoning.md
+  examples: knowledge/protocols/cpp.examples.md
+  schema: schema/cpp.schema.json
+  jsonld: exports/cpp.jsonld
+  uri: https://ontology.cuqou.com/cpp

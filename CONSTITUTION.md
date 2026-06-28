@@ -164,6 +164,16 @@ The ontology preserves **enduring ideas**, not temporary implementations.
 
 ---
 
+## Canonical Concept Test
+
+Before any concept is accepted as canonical, it must satisfy the following test:
+
+> *A canonical concept should answer one enduring human problem, remain meaningful without any specific product, and be defined clearly enough that both humans and AI interpret it consistently.*
+
+This test supersedes all other considerations. A concept that fails any of the three conditions — enduring problem, product independence, consistent interpretability — is not ready for canonicalization regardless of how useful it appears in the current context.
+
+---
+
 ## Amendment Process
 
 This Constitution may be amended only by the Cuqou Ontology Maintainer, with explicit rationale documented in the change history.
