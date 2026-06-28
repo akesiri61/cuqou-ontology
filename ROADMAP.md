@@ -98,6 +98,18 @@ Behavioral Validation has more weight than Knowledge Validation in Phase II.
 
 **Reference Implementation:** Cuqou LINE Mini App
 
+**Primary Goal:**
+
+> **Prove that `cuqou-ontology v1.0.0` is Executable Knowledge.**
+
+"Executable Knowledge" means: the ontology can be traced into design decisions, system behavior, and user experience in a verifiable chain:
+
+```
+Ontology → Traceability Matrix → User Flow → UI
+```
+
+If the chain holds without expanding the foundation, the ontology is proven.
+
 **Success Criterion:**
 
 > **Every user action must be traceable back to the ontology.**
@@ -120,7 +132,11 @@ Waiting For Me (Experience Pattern — Layer 4)
 Greeting Card (artifact)
 ```
 
-If a user action cannot be traced to this chain — the foundation has a gap, or the implementation has drifted.
+If a user action cannot be traced to this chain — diagnose first:  
+- **Implementation Drift** → fix the implementation (most common)  
+- **Foundation Gap** → open an RFC; do not add to foundation without review
+
+See: `TRACEABILITY_MATRIX.md` — the working tool for Phase II.
 
 **Planned Experience Patterns (validated during this phase):**
 
