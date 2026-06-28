@@ -6,9 +6,35 @@ Format: each entry records what changed, why it changed, and what was affected.
 
 ---
 
-## v0.4.0 — *pending* (CRP Canonicalization)
+## v0.5.0 — *pending* (CRP Canonicalization)
 
 *To be filled when CRP is promoted to canonical.*
+
+---
+
+## v0.4.5 — 2026-06-28
+
+**Relationship Grammar established — three-axis taxonomy**
+
+Added the structural layer that governs how all concepts in the ontology relate to each other.
+
+Three axes defined:
+- **State** — what condition the relationship is in (observed)
+- **Intent** — what the person wants to accomplish (chosen)
+- **Protocol** — which communication modality is appropriate (derived from Intent + context)
+
+Files added:
+- `knowledge/taxonomy/RELATIONSHIP_GRAMMAR.md` — grammar with AI reasoning examples
+- `knowledge/taxonomy/intent-taxonomy.md` — 9 intents with Intent × Protocol matrix and LLM hints
+- `knowledge/taxonomy/state-taxonomy.md` — 6 states with transition model
+
+**Key structural correction this grammar formalizes:**
+- State does NOT determine Protocol
+- Relationship Decay does NOT trigger CRP
+- CRP supports many Intents (`celebrate`, `maintain`, `appreciate`, `remember`, etc.) — not only `reconnect`
+- Intent + Modality → Protocol is the correct reasoning order for AI systems
+
+**Impact:** CRP (v0.5.0) will be the first concept that formally references the taxonomy rather than explaining its own scope internally.
 
 ---
 

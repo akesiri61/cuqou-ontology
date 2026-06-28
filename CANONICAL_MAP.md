@@ -15,12 +15,25 @@ Concepts not listed here are not part of the ontology.
 ## Categories
 
 ```
+Taxonomy          — The grammar: axes that govern how all concepts relate
 Core Concepts     — What exists in relationships (nouns)
 Protocols         — How to act within relationships (methods)
 States            — Conditions a relationship can be in
 Artifacts         — Things produced within relationships
 Systems           — Architectures that support relationships
 ```
+
+---
+
+## Taxonomy
+
+The grammar layer that defines axes and classification systems. Concepts in other categories reference the taxonomy — not the reverse.
+
+| ID | Name | Status | File |
+|---|---|---|---|
+| `relationship-grammar` | Relationship Grammar | `canonical` | `knowledge/taxonomy/RELATIONSHIP_GRAMMAR.md` |
+| `intent-taxonomy` | Interaction Intent Taxonomy | `canonical` | `knowledge/taxonomy/intent-taxonomy.md` |
+| `state-taxonomy` | Relationship State Taxonomy | `canonical` | `knowledge/taxonomy/state-taxonomy.md` |
 
 ---
 
