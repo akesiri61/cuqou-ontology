@@ -1,0 +1,69 @@
+# TEMPLATE — Copy this file to vocabulary/{id}.yaml and fill in all fields
+# Remove all comments before submitting for canonicalization
+# See STYLE_GUIDE.md for field requirements
+
+id: {concept-id}                    # lowercase, hyphens only, never changes after canonical
+version: "1.0"
+status: draft                       # draft | proposed | canonical | deprecated
+category: {category}                # concept | protocol | state | artifact | system
+created: "{YYYY-MM-DD}"
+maintainer: cuqou-ontology-maintainer
+
+label:
+  en: {Full Concept Name in English}
+  th: {ชื่อแนวคิดในภาษาไทย}
+
+abbreviation: {ABBR}                # optional — only if concept has a widely-used abbreviation
+
+canonical_question:
+  en: "{One question this concept was created to answer — first person}"
+  th: "{คำถามเดียวกันในภาษาไทย — บุรุษที่ 1}"
+
+one_sentence:
+  en: >
+    {30–50 word definition. No product references. Active voice.}
+  th: >
+    {นิยามภาษาไทย 30–50 คำ ไม่อ้างอิงผลิตภัณฑ์ ใช้กริยาแสดงการกระทำ}
+
+aliases:
+  - {alternate name 1}
+  - {alternate name 2}
+
+keywords:
+  en:
+    - {keyword 1}
+    - {keyword 2}
+  th:
+    - {คำสำคัญ 1}
+    - {คำสำคัญ 2}
+
+llm_hints:                          # Natural-language questions a person would ask
+  - "{question in Thai}"            # Minimum 5, maximum 15
+  - "{question in Thai}"
+  - "{question in English}"
+  - "{question in English}"
+  - "{question in English}"
+
+not_to_be_confused_with:            # What this concept is NOT (minimum 5)
+  - {term 1}
+  - {term 2}
+  - {term 3}
+  - {term 4}
+  - {term 5}
+
+related:                            # IDs of related canonical concepts
+  - {related-concept-id}
+
+canonical_independence: true        # MUST be true for canonicalization — see CONSTITUTION P9
+canonical_independence_note: >
+  {Who can use this concept without knowing Cuqou exists?
+  Would it remain meaningful if Cuqou ceased to exist? Explain why "yes".}
+
+files:
+  vocabulary: vocabulary/{id}.yaml
+  knowledge: knowledge/{category}/{id}.md
+  reasoning: knowledge/{category}/{id}.reasoning.md
+  examples: knowledge/{category}/{id}.examples.md
+  schema: schema/{id}.schema.json
+  jsonld: exports/{id}.jsonld
+  uri: https://ontology.cuqou.com/{id}
