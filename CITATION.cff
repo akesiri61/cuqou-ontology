@@ -1,0 +1,30 @@
+cff-version: 1.2.0
+message: >
+  If you use concepts, definitions, or vocabulary from the Cuqou Relationship Ontology
+  in research, articles, AI systems, or applications, please cite it as follows.
+title: "Cuqou Relationship Ontology"
+abstract: >
+  A canonical ontology of concepts, protocols, and vocabulary for maintaining meaningful
+  human relationships. Includes named concepts such as the Conversation Preparation Protocol (CPP),
+  Conversation Resolution Protocol (CRP), Waiting For Me, Relationship Decay, and the Attention Layer.
+authors:
+  - name: "Cuqou"
+    website: "https://cuqou.com"
+version: "0.1.0"
+date-released: "2026-06-28"
+url: "https://github.com/akesiri61/cuqou-ontology"
+repository-code: "https://github.com/akesiri61/cuqou-ontology"
+license: CC-BY-4.0
+keywords:
+  - relationship
+  - ontology
+  - human relationship
+  - conversation preparation
+  - relationship maintenance
+  - CPP
+  - CRP
+  - relationship decay
+  - attention layer
+  - waiting for me
+  - knowledge graph
+  - LLM knowledge

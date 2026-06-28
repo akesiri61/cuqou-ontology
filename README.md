@@ -1,5 +1,16 @@
 # Cuqou Ontology
 
+> This repository does not define software features.  
+> It defines enduring concepts about maintaining meaningful human relationships.  
+>  
+> Applications may change.  
+> AI models may change.  
+> Technologies may change.  
+>  
+> **The ontology should remain.**
+
+---
+
 The Cuqou Relationship Ontology is the canonical knowledge layer for concepts, protocols, and ideas that Cuqou has developed around human relationship maintenance.
 
 This repository is the **single source of truth** for all relationship knowledge published by Cuqou — whether on the website, in AI systems, via MCP Server, or in future applications.
@@ -34,6 +45,12 @@ cuqou-ontology/
 | Schema | `schema/` | Interoperability formats | AI systems |
 | Exports | `exports/` | Published artifacts | Web, APIs |
 | MCP | `mcp/` | AI tool integration | LLM agents |
+
+## License
+
+Knowledge content (`knowledge/`, `vocabulary/`, `schema/`, `exports/`) is licensed under **CC BY 4.0**.  
+You are free to share and adapt with attribution to Cuqou.  
+See [LICENSE](LICENSE) and [CITATION.cff](CITATION.cff) for citation format.
 
 ## Contributing
 
