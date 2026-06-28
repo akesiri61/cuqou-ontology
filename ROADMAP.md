@@ -11,7 +11,11 @@ license: CC BY 4.0 — Cuqou (https://cuqou.com)
 
 `cuqou-ontology` is a **Living Ontology**.
 
-It does not only store knowledge about relationships. It governs every stage of building for relationships:
+> **A Living Ontology is an executable body of knowledge that continuously governs product behavior, AI behavior, engineering decisions, and user experience.**
+
+It is not a Wiki. It is not a Glossary. It is not a document library that is referenced when convenient.
+
+It governs every stage of building:
 
 ```
 UX Design          ← governed by Experience Patterns + Anti-patterns
@@ -21,8 +25,39 @@ Code Review        ← governed by Conformance Checklist
 Team Decisions     ← governed by the 4 Questions
 ```
 
-A document library is referenced when convenient.  
-A Living Ontology is what the team asks before every decision.
+## The Complete Loop
+
+```
+Human Problem
+        │
+        ▼
+Relationship Truth
+        │
+        ▼
+Living Ontology
+        │
+        ▼
+Traceability
+        │
+        ▼
+Experience Pattern
+        │
+        ▼
+Implementation
+        │
+        ▼
+Conformance
+        │
+        ▼
+Behavioral Evidence
+        │
+        └─────────────────┐
+                          ▼
+          Foundation proven (or RFC opened)
+```
+
+Phase II does not add knowledge.  
+Phase II **collects evidence** — that the Living Ontology produces real behavioral change in real humans.
 
 **The Development Pipeline:**
 
@@ -133,9 +168,15 @@ Every Experience Pattern can answer: *"What human problem does this resolve — 
 
 ---
 
-## Phase II — Behavioral Validation (current)
+## Phase II — Behavioral Evidence Collection (current)
 
-**Question:** Can the Cuqou Ontology change how people act in their relationships?
+**Question:**
+
+> "Can we prove with real users that this Living Ontology helps humans care for their relationships better — without losing Relationship Truth?"
+
+This is the single measure of Phase II success. Not feature count. Not retention. Not session length.
+
+**What Phase II collects:**
 
 **Why LINE Mini App first:**  
 A website proves that AI and humans *understand* Cuqou.  
@@ -247,6 +288,39 @@ These measure whether Foundation Freeze was architecturally sound — not whethe
 
 If all four pass at the end of Phase II, Foundation Freeze is validated.  
 If any fail, the RFC process opens to address the specific gap.
+
+---
+
+## The Repository Ecosystem
+
+```
+cuqou-ontology          ← Living Ontology (this repository)
+        │
+        ▼
+Reference Implementations
+  cuqou-mvp (LINE Mini App)
+  cuqou-web
+        │
+        ▼
+Behavioral Evidence
+        │
+        ▼
+cuqou-cases             ← Evidence Layer (Phase II → Phase III)
+```
+
+**`cuqou-cases`** — the Evidence Layer of the Living Ontology.  
+Not marketing. Not testimonials.
+
+| What it contains | Purpose |
+|---|---|
+| Case Studies | How specific human problems were resolved |
+| Anonymous Patterns | Recurring behaviors observed across users |
+| Validation Results | Phase II KPI outcomes |
+| Human Transformations | Before/after documented per Experience Pattern |
+| Lessons Learned | Where the Foundation was challenged or confirmed |
+
+`cuqou-cases` is deferred until Phase II produces evidence worth recording.  
+It will become the primary input for Phase III Knowledge Validation and Phase IV Externalization.
 
 ---
 
