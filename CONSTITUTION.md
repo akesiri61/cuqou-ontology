@@ -174,6 +174,18 @@ This test supersedes all other considerations. A concept that fails any of the t
 
 ---
 
+## Canonical Source Rule
+
+This repository is the **sole canonical source** for all relationship concepts defined herein.
+
+All other repositories — including `cuqou-mvp`, `cuqou-web`, `cuqou-miniapp`, product specs, ADRs, MCP Servers, and any future projects — MAY reference or implement these concepts, but MUST NOT redefine them.
+
+If a discrepancy exists between this repository and any other source, `cuqou-ontology` is authoritative.
+
+This rule applies to all concepts with status `canonical` in `CANONICAL_MAP.md`.
+
+---
+
 ## Amendment Process
 
 This Constitution may be amended only by the Cuqou Ontology Maintainer, with explicit rationale documented in the change history.
