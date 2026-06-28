@@ -1,0 +1,86 @@
+# Cuqou Inference Layer — Artifact Suggestion Rules
+# type: inference
+# Suggests which artifact to use given Protocol + Intent.
+# Apply AFTER protocol-selection.yaml.
+
+version: "1.0"
+status: canonical
+uri: https://ontology.cuqou.com/inference/artifact-suggestion
+
+rules:
+
+  - id: A001
+    version: "1.0"
+    type: inference
+    confidence: 1.0
+    label: "CRP + celebrate → Greeting Card"
+    when:
+      protocol: crp
+      intent: celebrate
+    then:
+      artifact: greeting_card
+    rationale: >
+      Celebrations (birthday, anniversary, achievement) expressed asynchronously
+      are best served by a Greeting Card — a purposeful, designed artifact
+      rather than a plain message.
+
+  - id: A002
+    version: "1.0"
+    type: inference
+    confidence: 0.9
+    label: "CRP + remember → Memory Surface"
+    when:
+      protocol: crp
+      intent: remember
+    then:
+      artifact: memory_surface
+    rationale: >
+      The remember intent involves sharing or honoring a past moment.
+      A Memory Surface — which can contain photos, notes, or reflections —
+      is the appropriate artifact for this intent.
+
+  - id: A003
+    version: "1.0"
+    type: inference
+    confidence: 0.85
+    label: "CRP + reconnect → Greeting Card or Voice Memory"
+    when:
+      protocol: crp
+      intent: reconnect
+    then:
+      artifact:
+        any_of: [greeting_card, voice_memory]
+      note: >
+        Reconnection after silence benefits from a warm, personal artifact.
+        A Greeting Card provides structure; a Voice Memory provides intimacy.
+        Both are valid. Context (relationship closeness, time elapsed) determines the better choice.
+
+  - id: A004
+    version: "1.0"
+    type: inference
+    confidence: 0.8
+    label: "CRP + support → Voice Memory"
+    when:
+      protocol: crp
+      intent: support
+    then:
+      artifact: voice_memory
+      note: >
+        Supporting someone through grief or difficulty benefits from the
+        warmth of a voice. A Voice Memory conveys presence more than text.
+        Greeting Card is a valid fallback if voice is not available.
+
+  - id: A005
+    version: "1.0"
+    type: inference
+    confidence: 0.75
+    label: "CPP + prepare → 4 Standard Answers"
+    when:
+      protocol: cpp
+      intent: prepare
+    then:
+      artifact: cpp_preparation_answers
+    rationale: >
+      CPP preparation involves clarifying 4 key things before a conversation:
+      intention, emotion, the other person's likely state, and the one thing
+      to communicate. These are the 4 Standard Answers produced by CPP.

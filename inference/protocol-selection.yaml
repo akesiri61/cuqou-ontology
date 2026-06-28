@@ -1,0 +1,84 @@
+# Cuqou Inference Layer — Protocol Selection Rules
+# type: inference
+# Determines which protocol to recommend given Intent + Modality.
+# Apply AFTER loading constraints.yaml.
+
+version: "1.0"
+status: canonical
+uri: https://ontology.cuqou.com/inference/protocol-selection
+
+rules:
+
+  - id: P001
+    version: "1.0"
+    type: inference
+    confidence: 1.0
+    label: "Synchronous modality → CPP"
+    when:
+      modality: synchronous
+    then:
+      protocol: cpp
+    rationale: >
+      CPP is the protocol for synchronous conversation preparation.
+      Any intent that will be expressed through a real-time conversation
+      (face-to-face, voice call, video call) is supported by CPP.
+
+  - id: P002
+    version: "1.0"
+    type: inference
+    confidence: 1.0
+    label: "Asynchronous modality → CRP"
+    when:
+      modality: asynchronous
+    then:
+      protocol: crp
+    rationale: >
+      CRP is the protocol for asynchronous relationship communication.
+      Any intent expressed through a message, card, memory, or other
+      non-real-time artifact is supported by CRP.
+
+  - id: P003
+    version: "1.0"
+    type: inference
+    confidence: 0.85
+    label: "Prepare intent → CPP (regardless of modality)"
+    when:
+      intent: prepare
+    then:
+      protocol: cpp
+    rationale: >
+      The prepare intent is inherently about readying for a conversation —
+      which implies future synchronous communication. CPP is the preparation protocol.
+      Confidence < 1.0 because in rare cases a person may prepare an asynchronous message.
+
+  - id: P004
+    version: "1.0"
+    type: inference
+    confidence: 0.9
+    label: "Remember intent → CRP (asynchronous artifact)"
+    when:
+      intent: remember
+    then:
+      protocol: crp
+    rationale: >
+      The remember intent — honoring a shared memory or past moment — is
+      almost always expressed asynchronously (sending a memory, photo, or message).
+      CRP is the appropriate protocol.
+
+  - id: P005
+    version: "1.0"
+    type: inference
+    confidence: 0.7
+    label: "Reconnect intent + State at-risk or decaying → CPP preferred"
+    when:
+      intent: reconnect
+      state:
+        any_of: [at_risk, decaying]
+    then:
+      protocol: cpp
+      note: >
+        When reconnecting after significant drift, a synchronous conversation
+        is often more appropriate than an asynchronous message. CPP helps
+        prepare the person for that conversation. CRP remains valid if
+        synchronous contact is not possible.
+    confidence: 0.7

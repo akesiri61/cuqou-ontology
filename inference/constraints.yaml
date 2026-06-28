@@ -1,0 +1,95 @@
+# Cuqou Inference Layer — Constraint Rules
+# type: constraint
+# These rules define what MUST NOT be inferred.
+# Load these BEFORE applying inference rules.
+# Constraints are axiomatic (confidence: 1.0) and require Maintainer approval to change.
+
+version: "1.0"
+status: canonical
+uri: https://ontology.cuqou.com/inference/constraints
+
+constraints:
+
+  - id: C001
+    version: "1.0"
+    type: constraint
+    confidence: 1.0
+    label: "Relationship State does not determine Protocol"
+    prevents:
+      from: relationship_state
+      to: protocol_selection
+    rationale: >
+      Protocol is determined by Intent + Modality, not by State.
+      State provides context; it does not trigger or require a specific protocol.
+      A 'decaying' relationship does not require CRP.
+      A 'healthy' relationship may still use CPP or CRP depending on Intent.
+    example_violation: >
+      WRONG: "relationship is decaying → use CRP"
+      CORRECT: "intent is reconnect + modality is asynchronous → use CRP"
+
+  - id: C002
+    version: "1.0"
+    type: constraint
+    confidence: 1.0
+    label: "CRP does not require conflict or Relationship Decay"
+    prevents:
+      from: crp
+      to: conflict_prerequisite
+    rationale: >
+      CRP is asynchronous relationship communication for any intent.
+      Intents that use CRP include: celebrate, maintain, appreciate, remember,
+      encourage, reconnect, support, resolve.
+      CRP is not a conflict-resolution protocol. It does not require prior conflict.
+      It does not require Relationship Decay.
+    example_violation: >
+      WRONG: "CRP is for damaged relationships"
+      CORRECT: "CRP is asynchronous relationship communication"
+
+  - id: C003
+    version: "1.0"
+    type: constraint
+    confidence: 1.0
+    label: "CPP does not require Relationship Decay"
+    prevents:
+      from: cpp
+      to: decay_prerequisite
+    rationale: >
+      CPP is used whenever a person wants to prepare for a meaningful synchronous conversation.
+      The relationship may be healthy, quiet, at-risk, or decaying.
+      State affects how CPP is applied; it does not determine whether CPP is applicable.
+    example_violation: >
+      WRONG: "CPP is only needed when the relationship is damaged"
+      CORRECT: "CPP is for preparing any meaningful conversation, regardless of state"
+
+  - id: C004
+    version: "1.0"
+    type: constraint
+    confidence: 1.0
+    label: "Reconnect is one Intent, not a synonym for CRP"
+    prevents:
+      from: reconnect_intent
+      to: crp_equivalence
+    rationale: >
+      CRP is a protocol. Reconnect is one of nine Intents.
+      CRP supports many intents (celebrate, maintain, appreciate, remember, etc.).
+      Reconnect can also be addressed via CPP if the modality is synchronous.
+    example_violation: >
+      WRONG: "CRP = reconnecting with someone"
+      CORRECT: "CRP = asynchronous relationship communication; reconnect is one intent it supports"
+
+  - id: C005
+    version: "1.0"
+    type: constraint
+    confidence: 1.0
+    label: "State is observed, not selected"
+    prevents:
+      from: user_action
+      to: state_assignment
+    rationale: >
+      Relationship State describes the current condition of a relationship.
+      It is recognized from patterns of contact, responsiveness, and emotional connection.
+      It is not assigned by the user, not selected from a menu, and not set by the system.
+      A system may infer State from data; it may not assign State as an action.
+    example_violation: >
+      WRONG: "user sets relationship to 'decaying'"
+      CORRECT: "system recognizes relationship as 'decaying' from contact patterns"
