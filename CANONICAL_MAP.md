@@ -118,7 +118,7 @@ All patterns must follow `experience-patterns/EXPERIENCE_PATTERN_GUIDE.md`.
 
 | ID | Name | Thai | Status | File |
 |---|---|---|---|---|
-| `waiting-for-me` | Waiting For Me | กำลังรอฉัน | `proposed` | `experience-patterns/waiting-for-me.md` |
+| `waiting-for-me` | Waiting For Me | กำลังรอฉัน | `canonical` | `experience-patterns/waiting-for-me.md` |
 | `attention-layer` | Attention Layer | ชั้นความใส่ใจ | `proposed` | `experience-patterns/attention-layer.md` |
 | `greeting-card` | Greeting Card | การ์ดทักทาย | `proposed` | `experience-patterns/greeting-card.md` |
 | `memory-surface` | Memory Surface | พื้นที่ความทรงจำ | `proposed` | `experience-patterns/memory-surface.md` |

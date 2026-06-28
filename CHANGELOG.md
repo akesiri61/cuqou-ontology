@@ -6,6 +6,42 @@ Format: each entry records what changed, why it changed, and what was affected.
 
 ---
 
+## v1.0.0 — 2026-06-28
+
+**The First Canonical Experience Pattern Has Been Established**
+
+`waiting-for-me.md` — Reference Experience Pattern for the Cuqou Relationship Ontology.
+
+This version marks the completion of the ontology's foundational architecture. Every layer is now present and populated:
+
+| Layer | What it contains |
+|---|---|
+| 0 — Axiom | Relationship Truth |
+| 1 — Stewardship | Human Agency, Human Contribution, Intent Provenance |
+| 2 — Language | CPP, CRP, Grammar, States, Intents |
+| 3 — Intelligence | Decision Layer, Constraints, Ethics |
+| Architecture | ARCHITECTURE_OF_RELATIONSHIP.md |
+| Flow | RELATIONSHIP_FLOW.md |
+| Pattern Language | PATTERN_LANGUAGE.md |
+| 4 — Experience | Waiting For Me (Reference Pattern) |
+
+**Waiting For Me — canonical:**
+- Human Problem: people delay care not because they stopped caring, but because no signal arrives at the right moment
+- Human Transformation: from "I should contact them someday" to "I know who is waiting, I can respond today"
+- Tension: caring → no signal → silence → guilt → more silence
+- Resolution: surface only meaningful opportunities for care. Never induce guilt. Never gamify neglect.
+- Anti-patterns: Task Manager, Notification Feed, Streak Counter, Relationship Score, Guilt Engine, Obligation List
+- Relationship Truth Review: PASS
+
+**EXPERIENCE_PATTERN_GUIDE.md v3.0:**
+- Human Transformation field added
+- Success Criteria reframed as Human Outcome (not product metric)
+- Relationship Truth Review established as canonical gate for all future patterns
+
+All future Experience Patterns (Attention Layer, Silent Reminder, Daily Reflection, Relationship Inbox) will follow the structure established by this Reference Pattern.
+
+---
+
 ## v0.7.0 — 2026-06-28
 
 **Relationship Truth + Intent Provenance — Root Principles of the Ontology**
