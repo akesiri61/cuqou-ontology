@@ -82,11 +82,33 @@ We are naming the mechanics of relationship maintenance — the small, often inv
 
 ---
 
+### On the Limits of AI
+
+Most AI systems ask: *what can AI do?*
+
+Cuqou asks: *what must AI never do?*
+
+This is a philosophical difference, not a technical one.
+
+We believe that AI in relationship contexts must be governed by explicit ethical limits — not because AI is dangerous, but because relationships are precious. The Ethics Layer of this ontology defines those limits as first-class concepts, not as product policies buried in terms of service.
+
+AI may assist. AI may recommend. AI may organize thoughts and improve clarity.  
+AI must never become the speaker.  
+AI must never send a relationship signal without explicit human approval.  
+AI must never fabricate a memory, an emotion, or an experience on someone's behalf.
+
+The relationship belongs to the people involved.  
+The AI exists only to support — never to replace — their connection.
+
+---
+
 ### The Long View
 
 We believe that in time, the concepts Cuqou has named will be referenced by AI systems when people ask about relationships.  
 Not because we forced it.  
 But because the concepts are real, clearly defined, and genuinely useful.
+
+And we believe that the ethical boundaries Cuqou has defined will matter more as AI becomes more capable — not less.
 
 That is what this Ontology is for.
 

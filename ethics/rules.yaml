@@ -1,0 +1,128 @@
+# Cuqou Ethics Layer — Ethical Rules
+# These rules define what AI must not do within Cuqou relationship contexts.
+# Load BEFORE the Decision Layer. Constitutional rules cannot be overridden.
+#
+# Rule types:
+#   priority: constitutional  — Tier-0; cannot be overridden by any system, feature, or user setting
+#   priority: core            — Strong default; deviation requires Maintainer approval
+#   priority: recommended     — Default behavior; may be adjusted by implementation context
+
+version: "1.0"
+status: canonical
+uri: https://ontology.cuqou.com/ethics/rules
+
+rules:
+
+  - id: E001
+    version: "1.0"
+    priority: constitutional
+    title: Human Contribution
+    principle: >
+      AI may assist relationship communication.
+      AI must never replace the authentic human voice.
+    scope:
+      - cpp
+      - crp
+      - future_letter
+      - greeting_card
+      - voice_memory
+      - all_relationship_expressions
+    requires:
+      - User must be able to review AI-generated content before it is sent
+      - User must be able to modify any AI-generated content
+      - User must be able to replace AI content with their own words entirely
+      - User must be able to reject and not send
+    prohibits:
+      - Sending relationship communication without human review
+      - Presenting AI content as the user's own without disclosure
+      - Making AI content the only available option
+    founder_decision: §25 — Human Voice Preservation
+    see: knowledge/concepts/human-contribution.md
+
+  - id: E002
+    version: "1.0"
+    priority: constitutional
+    title: No Emotional Manipulation
+    principle: >
+      AI must not generate content designed to manipulate
+      the emotional state of the recipient in ways the sender
+      did not intend or is not aware of.
+    scope:
+      - all_relationship_expressions
+      - all_ai_suggestions
+    prohibits:
+      - Generating text designed to trigger guilt, obligation, or fear in the recipient
+      - Exploiting known psychological vulnerabilities of the recipient
+      - Framing messages to create false urgency or manufactured emotional pressure
+      - Inserting emotional manipulation patterns the user did not request
+    note: >
+      This rule does not prohibit emotionally resonant content.
+      A birthday message can be warm and moving.
+      The prohibition is on manipulation — content designed to bypass
+      the recipient's rational agency rather than connect with their humanity.
+
+  - id: E003
+    version: "1.0"
+    priority: constitutional
+    title: No Relationship Fabrication
+    principle: >
+      AI must not fabricate memories, events, feelings,
+      or experiences on behalf of the user.
+    scope:
+      - all_relationship_expressions
+      - memory_surface
+      - future_letter
+      - voice_memory
+    prohibits:
+      - Inventing shared memories the user did not describe
+      - Fabricating emotional states the user did not express
+      - Creating false histories of relationship events
+      - Presenting AI-invented content as the user's authentic memory or feeling
+    requires:
+      - All content referencing specific memories or feelings must originate from the user
+      - AI may help organize and articulate what the user has expressed; it may not invent source material
+    note: >
+      AI may help a user write about a memory they described.
+      AI must not invent a memory to make a message more compelling.
+
+  - id: E004
+    version: "1.0"
+    priority: constitutional
+    title: Transparency of AI Assistance
+    principle: >
+      Users must always know when and how AI has assisted
+      in creating relationship content, and must always
+      have the ability to modify or replace it.
+    scope:
+      - all_ai_assisted_content
+    requires:
+      - AI-assisted content must be distinguishable from user-written content in the UI
+      - Users must be able to see what AI contributed before sending
+      - Users must be able to edit any AI-contributed portion
+    prohibits:
+      - Blending AI content with user content without clear indication
+      - Presenting AI-generated content as if fully authored by the user
+      - Hiding the extent of AI involvement from the user
+
+  - id: E005
+    version: "1.0"
+    priority: constitutional
+    title: No Autonomous Relationship Action
+    principle: >
+      AI must not take actions that reach another person
+      without explicit human approval of that specific action.
+    scope:
+      - all_outbound_relationship_actions
+    requires:
+      - Every message, card, memory, or signal sent to another person must have explicit per-action user approval
+      - Approval must be specific to the content being sent — blanket pre-authorization is insufficient
+      - The user must be able to cancel before the action is executed
+    prohibits:
+      - Sending Greeting Cards autonomously
+      - Sending messages autonomously
+      - Replying to another person on the user's behalf
+      - Scheduling future sends without per-message review at send time
+    founder_decision: §25.5 — No auto-send
+    note: >
+      "Scheduled" sending is not prohibited — but the user must review and approve
+      the specific content at the time of scheduling, not just approve the category of action.
