@@ -192,9 +192,11 @@ The Architecture gives the **vertical view** — what layers exist and what each
 
 The Flow gives the **horizontal view** — how a single relationship expression moves from human decision to delivery.
 
-These are two perspectives on the same system. Together they form a complete picture.
+The Pattern Language gives the **problem view** — what recurring human tension each Experience Pattern resolves, and what it must never become.
 
-**See:** `RELATIONSHIP_FLOW.md`
+These three perspectives together form a complete picture of the system.
+
+**See:** `RELATIONSHIP_FLOW.md`, `PATTERN_LANGUAGE.md`
 
 ---
 

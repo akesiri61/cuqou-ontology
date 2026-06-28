@@ -1,5 +1,5 @@
 ---
-version: "1.0"
+version: "2.0"
 status: canonical
 uri: https://ontology.cuqou.com/experience-patterns/guide
 license: CC BY 4.0 — Cuqou (https://cuqou.com)
@@ -13,45 +13,31 @@ An Experience Pattern describes the shape of a specific human experience within 
 
 It is not a feature. It is not a protocol. It is not a concept.
 
-It is the answer to: **"What experience should a person have when a specific condition is true about their relationships?"**
+It answers: **"What recurring human problem exists here — and how should the system resolve it without losing Relationship Truth?"**
+
+See: `PATTERN_LANGUAGE.md` for the philosophy behind this approach.
 
 ---
 
 ## Domain vs. Product
 
-The Cuqou Relationship Ontology distinguishes between:
-
-| | Domain | Product |
+| | Domain (Layers 0–3) | Product (Layer 4) |
 |---|---|---|
-| What it describes | What is universally true about relationships | What a person sees and uses in a specific system |
-| Layers | 0 — Axiom, 1 — Stewardship, 2 — Language, 3 — Intelligence | 4 — Experience |
-| Examples | Relationship Truth, CPP, CRP, Human Agency | Waiting For Me, Relationship Inbox, Daily Reflection |
-| Uniqueness | One canonical definition | Multiple implementations possible |
-| Changes when? | Almost never | Can evolve with product design |
+| What it describes | What is universally true about relationships | What a person experiences in a specific system |
+| Uniqueness | One canonical definition per concept | Multiple Experience Patterns may apply the same Domain concepts |
+| Examples | Relationship Truth, CPP, CRP, Human Agency | Waiting For Me, Daily Reflection, Silent Reminder |
 
-Experience Patterns live at Layer 4. They *apply* Layers 0–3. They do not *define* them.
+Experience Patterns live at Layer 4. They *apply* Layers 0–3. They do not define them.
 
 CPP has one canonical definition.  
 CRP has one canonical definition.  
-But a system could implement five different Experience Patterns that all use CRP — each with a different surface, trigger, and form.
-
----
-
-## What Makes a Good Experience Pattern
-
-A good Experience Pattern:
-
-1. **Answers one clear experience question** — "What should a person experience when X is true?"
-2. **Is reusable** — other systems or implementations could apply this pattern, not just Cuqou
-3. **References the layers that govern it** — it is explicit about which principles, protocols, and decision rules apply
-4. **Passes the Relationship Truth check** — the experience preserves human agency and contribution
-5. **Has a clear success criterion** — how does the person feel when the pattern works well?
+But five different Experience Patterns could all use CRP — each with a different human problem, trigger, and form.
 
 ---
 
 ## The Template
 
-Every Experience Pattern must use this structure.
+Every Experience Pattern must use this structure. The fields correspond to the seven elements of Pattern Language described in `PATTERN_LANGUAGE.md`.
 
 ```markdown
 ---
@@ -66,23 +52,43 @@ license: CC BY 4.0 — Cuqou (https://cuqou.com)
 
 # [Pattern Name]
 
-## Experience Question
+## Human Problem
 
-> "What experience should a person have when [condition]?"
+What recurring human situation does this pattern address?
+Not a feature gap — the real human experience that leaves relationships
+worse than they could be, again and again.
 
-## One Sentence
+## Tension
 
-What this pattern provides, in one sentence.
+What opposing forces create this problem?
+Show the cycle or the conflict that makes the problem persist.
 
-## The Condition
+```
+Force A
+    ↓
+[what happens]
+    ↓
+Force B
+    ↓
+[what worsens]
+```
 
-What must be true in the system for this pattern to be relevant.
-This is observable state — not user action.
+## Resolution
 
-## The Experience Goal
+How does this pattern resolve the tension?
+Not a feature list — a philosophy.
+What is the minimum intervention that resolves the tension
+without creating new ones?
 
-What the person should feel or understand after encountering this pattern.
-Not "they should click X" — but "they should feel Y" or "they should know Y."
+The resolution must preserve both Relationship Truth
+and human autonomy. It does not eliminate the tension
+by eliminating one side of it.
+
+---
+
+## Purpose
+
+One sentence: what this pattern is for.
 
 ## Layer Dependencies
 
@@ -90,75 +96,104 @@ Which layers this pattern relies on:
 
 | Layer | Concept / Principle | Role in this pattern |
 |---|---|---|
-| 0 — Axiom | Relationship Truth | The pattern must preserve authentic human intent |
-| 1 — Stewardship | [Principles used] | [How they apply] |
-| 2 — Language | [Protocols / States / Intents] | [How they apply] |
-| 3 — Intelligence | [Decision rules] | [How they apply] |
+| 0 — Axiom | Relationship Truth | [how it applies] |
+| 1 — Stewardship | Human Agency | [how it applies] |
+| 1 — Stewardship | Human Contribution | [how it applies] |
+| 1 — Stewardship | Intent Provenance | [how it applies] |
+| 2 — Language | [Protocol / State / Intent] | [how it applies] |
+| 3 — Intelligence | [Decision rule / Constraint] | [how it applies] |
 
 ## Flow Entry Point
 
 Where does this pattern enter the Relationship Flow?
-Reference: `RELATIONSHIP_FLOW.md`
+
+```
+[Which stage in RELATIONSHIP_FLOW.md does this pattern trigger from?]
+```
+
+## Anti-patterns
+
+What must this experience never become?
+Name the failure modes explicitly — these protect against
+product drift under feature pressure.
+
+| Anti-pattern | Why it fails |
+|---|---|
+| [name] | [how it violates the Resolution or Relationship Truth] |
 
 ## Human Agency Check
 
 - [ ] The person can choose not to engage with this pattern
 - [ ] The person has control over what action (if any) results
-- [ ] No action is taken without explicit human approval
+- [ ] No action reaches another person without explicit human approval
+- [ ] The pattern presents information — it does not pressure action
 
 ## Relationship Truth Check
 
 - [ ] The pattern does not manufacture obligation, expectation, or guilt
-- [ ] The pattern presents information — it does not pressure action
 - [ ] Human Contribution is required before any expression is sent
 - [ ] Intent Provenance is preserved — the person's decision to act is their own
+- [ ] AI augments; it does not replace human intention
 
-## What AI May Do in This Pattern
+## What AI May Do
 
 What AI assistance is appropriate within this pattern.
 
-## What AI Must Not Do in This Pattern
+## What AI Must Not Do
 
-What would violate the Stewardship Principles within this context.
+What would push this pattern toward its Anti-patterns.
 
 ## Success Criteria
 
-How to know the pattern is working well:
-- The person feels [Y] when they encounter this pattern
-- The person is able to [Z] without [negative outcome]
+How does a person feel when the pattern works well?
+Not clicks or retention — the human experience of the tension being resolved.
 
 ## Related Patterns
 
-Other Experience Patterns that share conditions, intents, or protocols with this one.
+Other Experience Patterns that share conditions, intents, or protocols.
 
 ## Related Concepts
 
-Links to the ontology concepts this pattern applies.
+Links to the Domain concepts this pattern applies.
 ```
 
 ---
 
 ## How to Propose a New Experience Pattern
 
-1. Verify the experience question cannot be answered by an existing pattern
-2. Identify which Domain layers (0–3) the pattern depends on
-3. Write the pattern using the template above with `status: draft`
-4. Add to `CANONICAL_MAP.md` with `status: proposed`
-5. Submit for Maintainer review
+1. Identify the **Human Problem** — a recurring situation, not a feature gap
+2. Name the **Tension** — the opposing forces that make the problem persist
+3. Write the **Resolution** — the philosophy, not the implementation
+4. Name the **Anti-patterns** — what this must never become
+5. Trace all **Layer Dependencies** explicitly
+6. Verify both checks pass: Human Agency + Relationship Truth
+7. Add to `CANONICAL_MAP.md` with `status: draft`
+8. Submit for Maintainer review
 
 A pattern becomes `canonical` when:
-- The experience question is clearly and uniquely defined
-- All layer dependencies are explicit
-- Both the Human Agency Check and Relationship Truth Check pass
+- The Human Problem is real and recurring
+- The Tension is named clearly
+- The Resolution preserves Relationship Truth
+- Anti-patterns are named and principled
+- All Layer Dependencies are explicit
 - At least one reference implementation exists or is specced
 
 ---
 
 ## The First Canonical Pattern
 
-The first Experience Pattern in the Cuqou ontology is **Waiting For Me** — the reference implementation for how a person should experience the discovery that relationships are waiting for their attention.
+The first Experience Pattern in the Cuqou ontology is **Waiting For Me** — the reference implementation for how a person should experience the moment when relationships are waiting for their attention.
 
 See: `experience-patterns/waiting-for-me.md`
+
+---
+
+## Version History
+
+| Version | Change |
+|---|---|
+| 1.0 | Initial guide with basic template |
+| 2.0 | Template expanded with Pattern Language structure: Human Problem, Tension, Resolution, Anti-patterns |
 
 ---
 
