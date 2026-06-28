@@ -103,7 +103,7 @@ CPP would be a useful concept even if Cuqou had never existed.
 
 ## Related Concepts
 
-- **[CRP](crp.md)** — Conversation Resolution Protocol: what happens *during* a conversation that has reached difficulty or conflict
+- **[CRP](crp.md)** — Conversation Resolution Protocol: asynchronous relationship communication through relationship signals (Greeting Card, Digital Memory, etc.) — used for maintenance, appreciation, and reconnection, not only conflict
 - **[Relationship Decay](../states/relationship-decay.md)** — the condition CPP is often used to address
 - **[Waiting For Me](../states/waiting-for-me.md)** — the attentional state that often triggers the need for CPP
 - **[Attention Layer](../systems/attention-layer.md)** — the system that surfaces the right moment to use CPP
