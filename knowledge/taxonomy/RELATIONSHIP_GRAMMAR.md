@@ -33,6 +33,33 @@ Axis 2: INTENT    — What does the person want to accomplish?
 Axis 3: PROTOCOL  — What communication modality is appropriate?
 ```
 
+## The Complete Expression Flow
+
+Before a relationship expression can move through the Grammar axes, two root principles must be satisfied. These are not axes — they are structural prerequisites:
+
+```
+Human Decision
+      ↓
+Intent Provenance verified?    ← Did a human initiate this? (concept/intent-provenance.md)
+      ↓
+   Intent                      ← What does the person want to accomplish? (Axis 2)
+      ↓
+  Protocol                     ← Sync or Async? (Axis 3)
+      ↓
+ Expression                    ← What form of care? (RFC-0001)
+      ↓
+Human Contribution             ← Is authentic human voice present? (concept/human-contribution.md)
+      ↓
+   Medium                      ← Through what channel?
+      ↓
+    Send
+```
+
+**If Intent Provenance cannot be verified — the expression must not proceed.**
+
+This flow represents the full Relationship Truth check: expressions must trace to genuine human intention at every stage.  
+**See:** `knowledge/concepts/relationship-truth.md`
+
 ---
 
 ## Axis 1 — Relationship State

@@ -43,7 +43,9 @@ Fundamental ideas about the nature of relationships.
 
 | ID | Name | Thai | Status | File |
 |---|---|---|---|---|
+| `relationship-truth` | Relationship Truth | ความจริงของความสัมพันธ์ | `canonical` | `knowledge/concepts/relationship-truth.md` |
 | `human-contribution` | Human Contribution | การมีส่วนร่วมของมนุษย์ | `canonical` | `knowledge/concepts/human-contribution.md` |
+| `intent-provenance` | Intent Provenance | ที่มาของเจตนา | `canonical` | `knowledge/concepts/intent-provenance.md` |
 | `relationship` | Relationship | ความสัมพันธ์ | `proposed` | `knowledge/concepts/relationship.md` |
 | `attention` | Attention | ความสนใจ / การให้ความใส่ใจ | `proposed` | `knowledge/concepts/attention.md` |
 | `memory` | Relationship Memory | ความทรงจำในความสัมพันธ์ | `proposed` | `knowledge/concepts/memory.md` |

@@ -6,6 +6,43 @@ Format: each entry records what changed, why it changed, and what was affected.
 
 ---
 
+## v0.7.0 — 2026-06-28
+
+**Relationship Truth + Intent Provenance — Root Principles of the Ontology**
+
+Two canonical concepts added that form the philosophical foundation from which all other concepts derive.
+
+Concepts promoted to `canonical`:
+- `relationship-truth` — the root principle: expressions must faithfully represent authentic human intention, regardless of how much technology assists
+- `intent-provenance` — the traceability of a relationship expression's intent to a genuine human decision; must be verified before Protocol selection
+
+**Relationship Authenticity Crisis** defined: not a technical failure, but a failure of human trust infrastructure — arising when recipients cannot know whether a human or AI sent a message.
+
+**Cuqou as Trust Infrastructure** established: Cuqou does not prohibit AI assistance; it provides the structural commitment that every meaningful expression within the ecosystem remains traceable to genuine human intent.
+
+Grammar extended:
+- `RELATIONSHIP_GRAMMAR.md` updated: Intent Provenance added as a structural prerequisite check before the three-axis Grammar begins
+- Full expression flow documented: Human Decision → Intent Provenance → Intent → Protocol → Expression → Human Contribution → Medium → Send
+
+FOUNDER_DECISIONS §25.6 added:
+> "The purpose of Cuqou is not to automate relationships. The purpose of Cuqou is to preserve the authenticity of relationships in the age of AI."
+
+MANIFESTO.md updated:
+- "Cuqou as Trust Infrastructure" section added (HTTPS/Git analogy)
+- Relationship Truth and Intent Provenance introduced as the mechanism behind the civilizational purpose
+
+Files added:
+- `knowledge/concepts/relationship-truth.md` — canonical
+- `knowledge/concepts/intent-provenance.md` — canonical
+
+Files updated:
+- `CANONICAL_MAP.md` — relationship-truth and intent-provenance added as canonical Core Concepts
+- `knowledge/taxonomy/RELATIONSHIP_GRAMMAR.md` — Intent Provenance + full expression flow
+- `MANIFESTO.md` — Trust Infrastructure section
+- `FOUNDER_DECISIONS.md §25.6` — civilizational purpose declaration
+
+---
+
 ## v0.5.0 — *pending* (CRP Canonicalization)
 
 *To be filled when CRP is promoted to canonical.*

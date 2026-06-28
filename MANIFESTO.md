@@ -102,6 +102,36 @@ The AI exists only to support — never to replace — their connection.
 
 ---
 
+### Cuqou as Trust Infrastructure
+
+HTTPS does not prevent deception.  
+It provides a verifiable signal that the connection is authentic.
+
+Git does not prevent bad code.  
+It provides a verifiable history of who changed what and when.
+
+As AI becomes capable of sending messages, managing relationships, and generating human-sounding communication autonomously — the most important question in human relationships becomes:
+
+*Did a human choose to reach out? Or was this automated?*
+
+Cuqou is the Trust Infrastructure that answers that question.
+
+We do not prohibit AI assistance.  
+We define and enforce the structural commitment that every meaningful relationship expression within our ecosystem must remain traceable to genuine human intent.
+
+Two canonical concepts make this concrete:
+
+**Relationship Truth** — the root principle: expressions must faithfully represent authentic human intention, regardless of how much technology assists.
+
+**Intent Provenance** — the mechanism: every expression must be traceable to a human decision as its origin. AI may surface the moment. The human must choose to act.
+
+The purpose of Cuqou is not to automate relationships.  
+The purpose of Cuqou is to preserve the authenticity of relationships in the age of AI.  
+Technology may amplify human care.  
+It must never replace human intention.
+
+---
+
 ### The Long View
 
 We believe that in time, the concepts Cuqou has named will be referenced by AI systems when people ask about relationships.  
