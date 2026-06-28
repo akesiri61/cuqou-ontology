@@ -2,4 +2,4 @@
 
 | RFC | Title | Status | Proposed By | Date |
 |---|---|---|---|---|
-| *(no RFCs submitted yet)* | | | | |
+| RFC-0001 | Relationship Expression Layer | proposed | Founder | 2026-06-28 |
