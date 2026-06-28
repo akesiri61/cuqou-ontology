@@ -7,6 +7,52 @@ license: CC BY 4.0 — Cuqou (https://cuqou.com)
 
 # Cuqou Relationship Ontology — Roadmap
 
+## What cuqou-ontology Is
+
+`cuqou-ontology` is a **Living Ontology**.
+
+It does not only store knowledge about relationships. It governs every stage of building for relationships:
+
+```
+UX Design          ← governed by Experience Patterns + Anti-patterns
+AI Behavior        ← governed by Decision Layer + Ethics Layer
+Product Decisions  ← governed by Relationship Truth + Stewardship Principles
+Code Review        ← governed by Conformance Checklist
+Team Decisions     ← governed by the 4 Questions
+```
+
+A document library is referenced when convenient.  
+A Living Ontology is what the team asks before every decision.
+
+**The Development Pipeline:**
+
+```
+Human Problem
+        ↓
+4 Questions answered
+        ↓
+TRACEABILITY_MATRIX.md row added
+        ↓
+Experience Pattern confirmed
+        ↓
+Implementation built
+        ↓
+ONTOLOGY_CONFORMANCE_CHECKLIST.md completed
+        ↓
+Merge
+```
+
+**The 4 Questions (team rule — applied before every feature):**
+
+> 1. **Human Problem** — What recurring human problem does this solve?
+> 2. **Relationship Truth** — How does this connect to the authenticity of human relationships?
+> 3. **Existing Foundation** — Can the existing ontology cover this without adding new layers?
+> 4. **Implementation** — Given the foundation exists, what is the best experience?
+
+Only after questions 1–3 are answered does the team move to question 4.
+
+---
+
 ## Foundation Freeze Notice
 
 **As of v1.0.0, the structural foundation of this ontology is frozen.**
