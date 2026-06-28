@@ -9,7 +9,10 @@ license: CC BY 4.0 — Cuqou (https://cuqou.com)
 
 ## What cuqou-ontology Is
 
-`cuqou-ontology` is a **Living Ontology**.
+`cuqou-ontology` is a **Living Ontology** — the **public Knowledge layer** of Cuqou.
+
+> **Scope boundary:** This repository contains Knowledge (what concepts mean, how they relate, what principles govern). It does not contain Know-how (how the Runtime selects protocols, how relationships are scored or ranked, how signals are detected). Runtime logic lives in `cuqou-runtime` (private). See: `FOUNDER_DECISIONS §26`.
+
 
 > **A Living Ontology is an executable body of knowledge that continuously governs product behavior, AI behavior, engineering decisions, and user experience.**
 
