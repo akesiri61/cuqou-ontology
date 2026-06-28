@@ -1,5 +1,5 @@
 ---
-version: "1.0"
+version: "2.0"
 status: canonical
 uri: https://ontology.cuqou.com/roadmap
 license: CC BY 4.0 — Cuqou (https://cuqou.com)
@@ -22,7 +22,45 @@ What continues to grow:
 - CONFORMANCE criteria as implementations are validated
 - Externalization tooling (MCP, JSON-LD, LLM packages)
 
-If validation of the foundation reveals a structural gap, that gap is addressed through the RFC process — not by adding layers informally.
+---
+
+## Phase II Rule — Foundation Freeze Enforcement
+
+> **No new layers may be added during Phase II.**
+
+Permitted during Phase II:
+- Bug fixes and clarifications in existing ontology files
+- Missing definitions proven necessary by real usage
+- New Experience Patterns (using the existing template)
+
+Not permitted during Phase II:
+- New structural layers
+- New Axioms
+- New Stewardship Principles (without RFC)
+
+**When the urge to add a new layer arises:**  
+Ask first: *"Can the existing foundation address this?"*  
+If yes — adjust the implementation, not the foundation.  
+If no — open an RFC and document the gap before acting.
+
+This rule exists so that Phase II remains a proof of foundation quality, not a continuation of foundation design.
+
+---
+
+## Roadmap
+
+```
+Phase I    Foundation         ✅ COMPLETE — v1.0.0 (2026-06-28)
+              │
+Phase II   Behavioral Validation   ← current
+           LINE Mini App
+              │
+Phase III  Knowledge Validation
+           cuqou-web
+              │
+Phase IV   External Ecosystem
+           MCP · AI Plugin · Semantic API · Conformance
+```
 
 ---
 
@@ -44,71 +82,109 @@ Build a complete, layered knowledge system for human relationships in the age of
 | 4 — Experience | Waiting For Me (Reference Pattern) |
 
 **Foundation integrity test:**  
-Every concept in this ontology can answer: *"How does this serve Relationship Truth?"*  
+Every concept can answer: *"How does this serve Relationship Truth?"*  
 Every Experience Pattern can answer: *"What human problem does this resolve — and what must it never become?"*
 
 ---
 
-## Phase II — Validation (current)
+## Phase II — Behavioral Validation (current)
 
-**Goal:** Prove that the foundation is sufficient for real implementations without adding new structural layers.
+**Question:** Can the Cuqou Ontology change how people act in their relationships?
 
-**Method:** Build additional Experience Patterns and observe whether each one fits the existing foundation or exposes a gap.
+**Why LINE Mini App first:**  
+A website proves that AI and humans *understand* Cuqou.  
+A Mini App proves that Cuqou *changes human behavior*.  
+Behavioral Validation has more weight than Knowledge Validation in Phase II.
 
-**Planned Experience Patterns:**
+**Reference Implementation:** Cuqou LINE Mini App
 
-| Pattern | Status | Human Problem it addresses |
+**Success Criterion:**
+
+> **Every user action must be traceable back to the ontology.**
+
+Example — when a user presses "Send Greeting Card":
+
+```
+Relationship Truth (Axiom)
+        ↓
+Human Agency (Stewardship)
+        ↓
+Intent Provenance (Stewardship)
+        ↓
+CRP (Protocol — Layer 2)
+        ↓
+Decision Layer (Layer 3)
+        ↓
+Waiting For Me (Experience Pattern — Layer 4)
+        ↓
+Greeting Card (artifact)
+```
+
+If a user action cannot be traced to this chain — the foundation has a gap, or the implementation has drifted.
+
+**Planned Experience Patterns (validated during this phase):**
+
+| Pattern | Status | Human Problem |
 |---|---|---|
 | `waiting-for-me` | ✅ canonical | No signal when a relationship needs attention |
 | `attention-layer` | proposed | WFM must reach the person in their existing context |
-| `daily-reflection` | proposed | No structured moment to survey the state of meaningful relationships |
+| `daily-reflection` | proposed | No structured moment to survey meaningful relationships |
 | `relationship-inbox` | proposed | Multiple relationship signals with no prioritization |
 | `silent-reminder` | proposed | Relationships where presence matters more than words |
 
-**Validation criterion:**  
-If all planned patterns can be fully written using existing Layers 0–3 without adding new concepts, the foundation passes Phase II.
+---
 
-If a gap is found, it is addressed by RFC — not by informal structural expansion.
+## Phase III — Knowledge Validation (future)
 
-**Reference Implementations (outside this repository):**
-- **Cuqou LINE Mini App** — proves the Ontology can produce real user experience
-- **cuqou-web** — proves the Ontology can explain itself to humans and AI (Knowledge Center, JSON-LD, llms.txt)
+**Question:** Does the world understand what Cuqou is?
+
+**Reference Implementation:** cuqou-web
+
+Website proves that:
+- AI systems can reason correctly about Cuqou concepts
+- Search engines surface Cuqou concepts when people ask about relationships
+- People who read about Cuqou understand what it is and why it exists
+
+**Planned artifacts:**
+
+| Artifact | What it proves |
+|---|---|
+| Knowledge Center | Humans understand the ontology |
+| `llms.txt` | LLMs find and apply Cuqou concepts |
+| JSON-LD exports | Search and AI can reference canonical definitions |
+| AI Plugin Docs | Developers can build on the ontology |
+| FAQ | Edge cases are addressed without expanding the foundation |
 
 ---
 
-## Phase III — Externalization (future)
+## Phase IV — External Ecosystem (future)
 
-**Goal:** Make the Cuqou Relationship Ontology usable by external systems, AI agents, and developers.
+**Question:** Can other systems build on the Cuqou Relationship Ontology?
 
-**Planned:**
+Begins after Phase III — when the foundation has been proven by both behavioral and knowledge validation.
 
 | Artifact | Purpose |
 |---|---|
-| `CONFORMANCE.md` | Defines what it means for a system to be "Cuqou compatible" |
-| MCP Server | Exposes ontology concepts as tools for AI agents |
-| JSON-LD exports (expanded) | Machine-readable knowledge for search and AI |
-| `llms.txt` | AI-optimized entry point for LLM reasoning |
-| Semantic API | Query-able access to concepts, patterns, and decision rules |
-| LLM Training Package | Curated concept definitions for fine-tuning or RAG |
-
-Phase III begins after Phase II validation is complete — when the foundation has been proven by implementation, not just by theory.
+| `CONFORMANCE.md` | Defines what "Cuqou compatible" means structurally |
+| MCP Server | Exposes ontology as tools for AI agents |
+| Semantic API | Query-able access to concepts, patterns, decision rules |
+| LLM Training Package | Curated definitions for fine-tuning or RAG |
 
 ---
 
-## What "Cuqou Compatible" Will Mean (CONFORMANCE preview)
+## Ontology KPIs
 
-A system that claims to implement Cuqou concepts must:
+These measure whether Foundation Freeze was architecturally sound — not whether the product is successful.
 
-1. **Relationship Truth Review** — every experience passes the canonical check
-2. **Human Agency** — no action reaches another person without explicit human approval
-3. **Human Contribution** — the person's voice is preserved in every expression
-4. **Intent Provenance** — the system can distinguish human-initiated from AI-initiated intent
-5. **Pattern compliance** — Experience Patterns follow the canonical template and name their Anti-patterns
+| KPI | Meaning | Target |
+|---|---|---|
+| **Ontology Coverage** | What % of features can be explained by the existing ontology without creating new concepts? | ≥ 90% during Phase II |
+| **Foundation Stability** | How many new structural layers were added during Validation? | 0 |
+| **Decision Traceability** | Can every system recommendation be traced back to the Axiom? | 100% |
+| **Pattern Reusability** | Can new Experience Patterns use the existing template without modification? | Yes for all Phase II patterns |
 
-Using the words "CPP" or "CRP" is not sufficient for Cuqou compatibility.  
-Compatibility is structural — it requires implementing the principles, not just the vocabulary.
-
-See: `CONFORMANCE.md` (to be written in Phase III)
+If all four pass at the end of Phase II, Foundation Freeze is validated.  
+If any fail, the RFC process opens to address the specific gap.
 
 ---
 
@@ -117,7 +193,7 @@ See: `CONFORMANCE.md` (to be written in Phase III)
 Any proposed change to the foundation must go through the RFC process.  
 See: `rfc/RFC-INDEX.md`
 
-New Experience Patterns do not require an RFC — they require the canonical template and Maintainer approval.
+New Experience Patterns do not require an RFC — they require the canonical template, Relationship Truth Review, and Maintainer approval.
 
 ---
 
